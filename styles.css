@@ -1,17 +1,125 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     height: 97vh;
-    flex-direction: column;
+    background-color: #34353e;
 }
 
-header {
-
+h1, footer{
+    color: #44C497FF;
 }
 
 main {
     flex-grow: 1;
     display: flex;
+    align-items: flex-start;
+    margin-top: 175px;
+}
+/* styles for the dice; single dot positoning applied through .dice styles */
+.player-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.player {
+    color: #44C497FF;
+}
+
+.dice {
+    height: 200px;
+    width: 200px;
+    background-color: #930212;
+    border-radius: 17px;
+    margin: 20px;
+}
+
+/* styles for the dot */
+
+.dot {
+    height: 38px;
+    width: 38px;
+    background-color: #fbefd6;
+    border-radius: 50px;
+}
+
+/* one dot dice styles */
+#dice1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* two dot dice styles */
+#dice2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* three dot dice styles */
+#dice3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dice3 > div:first-child {
+    align-self: flex-start;
+    margin-left: 15px;
+}
+
+#dice3 > div:last-child {
+    align-self: flex-end;
+    margin-right: 15px;
+}
+
+/* four dot dice styles */
+#dice4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#dice4 > div:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin-top: 45px;
+}
+
+#dice4 > div:last-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    margin-bottom: 45px;
+}
+
+/* five dot dice styles */
+#dice5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#dice5 > div:first-child, #dice5 > div:last-child {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* six dot dice styles */
+#dice6 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#dice6 > div:first-child, #dice6 > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
