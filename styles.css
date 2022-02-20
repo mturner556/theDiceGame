@@ -7,7 +7,13 @@ body {
     background-color: #34353e;
 }
 
+h1 {
+    font-weight: bolder;
+    font-size: 6rem;
+}
+
 h1, footer{
+    font-family: cursive;
     color: #44C497FF;
 }
 
@@ -15,7 +21,11 @@ main {
     flex-grow: 1;
     display: flex;
     align-items: flex-start;
-    margin-top: 175px;
+    margin-top: 75px;
+}
+
+footer {
+    font-size: 20px;
 }
 /* styles for the dice; single dot positoning applied through .dice styles */
 .player-box {
@@ -27,6 +37,8 @@ main {
 
 .player {
     color: #44C497FF;
+    font-family: cursive;
+    font-size: 35px;
 }
 
 .dice {
@@ -55,14 +67,16 @@ main {
 
 /* two dot dice styles */
 #dice2 {
-    display: flex;
+    display: none; /* use flex when visible*/
+    visibility: hidden;
     justify-content: space-evenly;
     align-items: center;
 }
 
 /* three dot dice styles */
 #dice3 {
-    display: flex;
+    display: none; /* use flex when visible*/
+    visibility: hidden;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -80,7 +94,8 @@ main {
 
 /* four dot dice styles */
 #dice4 {
-    display: flex;
+    display: none; /* use flex when visible*/
+    visibility: hidden;
     flex-direction: column;
 }
 
@@ -100,7 +115,8 @@ main {
 
 /* five dot dice styles */
 #dice5 {
-    display: flex;
+    display: none; /* use flex when visible*/
+    visibility: hidden;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -114,7 +130,8 @@ main {
 
 /* six dot dice styles */
 #dice6 {
-    display: flex;
+    display: none; /* use flex when visible*/
+    visibility: hidden;
     justify-content: space-evenly;
 }
 
