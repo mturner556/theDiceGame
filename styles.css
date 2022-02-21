@@ -37,7 +37,7 @@ footer {
 
 .player {
     color: #44C497FF;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
 }
 
@@ -59,54 +59,47 @@ footer {
 }
 
 /* one dot dice styles */
-#dice1 {
-    display: flex;
+.dice1 {
     justify-content: center;
     align-items: center;
 }
 
 /* two dot dice styles */
-#dice2 {
-    display: none; /* use flex when visible*/
-    visibility: hidden;
+.dice2 {
     justify-content: space-evenly;
     align-items: center;
 }
 
 /* three dot dice styles */
-#dice3 {
-    display: none; /* use flex when visible*/
-    visibility: hidden;
+.dice3 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-#dice3 > div:first-child {
+.dice3 > div:first-child {
     align-self: flex-start;
     margin-left: 15px;
 }
 
-#dice3 > div:last-child {
+.dice3 > div:last-child {
     align-self: flex-end;
     margin-right: 15px;
 }
 
 /* four dot dice styles */
-#dice4 {
-    display: none; /* use flex when visible*/
-    visibility: hidden;
+.dice4 {
     flex-direction: column;
 }
 
-#dice4 > div:first-child {
+.dice4 > div:first-child {
     display: flex;
     justify-content: space-evenly;
     flex-grow: 1;
     margin-top: 45px;
 }
 
-#dice4 > div:last-child {
+.dice4 > div:last-child {
     display: flex;
     justify-content: space-evenly;
     align-content: flex-end;
@@ -114,29 +107,37 @@ footer {
 }
 
 /* five dot dice styles */
-#dice5 {
-    display: none; /* use flex when visible*/
-    visibility: hidden;
+.dice5 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#dice5 > div:first-child, #dice5 > div:last-child {
+.dice5 > div:first-child, .dice5 > div:last-child {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
 /* six dot dice styles */
-#dice6 {
-    display: none; /* use flex when visible*/
-    visibility: hidden;
+.dice6 {
     justify-content: space-evenly;
 }
 
-#dice6 > div:first-child, #dice6 > div:last-child {
+.dice6 > div:first-child, .dice6 > div:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+/* Hidden styles */
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* Visibile styles */
+.visible {
+    display: flex;
+    visibility: visible;
 }
